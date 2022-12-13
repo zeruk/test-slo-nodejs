@@ -5,4 +5,4 @@ RUN npm install
 COPY . .
 RUN NODE_ENV=production npm run build
 
-CMD ["npm", "start"]
+ENTRYPOINT ["npm", "run", "start"]
